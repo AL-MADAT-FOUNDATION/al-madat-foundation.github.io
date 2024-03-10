@@ -251,9 +251,7 @@ a:focus {
 .navbar .navbar-brand {
     margin: 0;
     color: #ffffff;
-    font-size: 45px;
     line-height: 0px;
-    font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
