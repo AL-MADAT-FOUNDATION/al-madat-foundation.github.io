@@ -2413,3 +2413,11 @@ a:focus {
         text-align: center;
     }
 }
+
+.footer-contact p, 
+.footer-contact p a{
+    color: white !important;
+}
+.footer-contact i{
+    color: #000 !important;
+}
