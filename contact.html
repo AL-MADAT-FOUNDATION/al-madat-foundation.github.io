@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+       <title>Al-Madat Foundation</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        
+        <!-- Top Bar End -->
+
+     
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/Al-Madat_Profile.png" class="navlogo" alt="Logo" >
+                Al-Madat Foundation
+            </a>
+            
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="event.html" class="nav-item nav-link">Events</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="team.html" class="nav-item nav-link">Team</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+        
+        
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="index.html">Home</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+        
+        <!-- Contact Start -->
+        <style>
+            .contact-section {
+                background: #f9f9f9;
+                /* padding: 80px 0; */
+            }
+        
+            .contact-box {
+                background: #fff;
+                padding: 40px;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+        
+            .contact-form .form-control {
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                padding: 12px;
+                font-size: 16px;
+                transition: all 0.3s ease;
+            }
+        
+            .contact-form .form-control:focus {
+                border-color: #6F2DA8;
+                box-shadow: 0 0 10px rgba(111, 45, 168, 0.2);
+            }
+        
+            .contact-btn {
+                background: linear-gradient(45deg, #6F2DA8, #A855F7);
+                color: #fff;
+                padding: 12px;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 8px;
+                border: none;
+                width: 100%;
+                transition: all 0.3s ease;
+            }
+        
+            .contact-btn:hover {
+                background: linear-gradient(45deg, #A855F7, #6F2DA8);
+                transform: scale(1.05);
+            }
+        
+            .contact-img img {
+                max-width: 100%;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+        
+        <div class="contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Get In Touch</p>
+                    <h2>Contact for any query</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="contact-img text-center">
+                            <img src="img/home.jpg" alt="Contact Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-box">
+                            <form autocomplete="off" action="send_mail.php" method="POST">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name *" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email *" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject *" required />
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" class="form-control" rows="4" placeholder="Your Message *" required></textarea>
+                                </div>
+                                <button type="submit" class="contact-btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function gotowhatsapp() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var subject = document.getElementById("subject").value;
+                var message = document.getElementById("message").value;
+        
+                var url = "https://wa.me/+917020523129?text="
+                    + "📩 *New Contact Query* %0a"
+                    + "👤 *Name:* " + name + "%0a"
+                    + "📧 *Email:* " + email + "%0a"
+                    + "📌 *Subject:* " + subject + "%0a"
+                    + "💬 *Message:* " + message;
+        
+                window.open(url, '_blank').focus();
+            }
+        </script>
+        
+        <!-- Contact End -->
+
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer-contact">
+                            <h2>Our Head Office</h2>
+                            <p><a class="fa fa-map-marker-alt" target="_blank"
+                                    href="https://goo.gl/maps/61D4bzceXDCxnNp87">564, rasta peth, galaxy terrace, pune
+                                    411011</a></p>
+    
+                            <p><a class="fa fa-phone-alt" href="tel:+91 7020523129"> +91 7020523129</a></p>
+    
+                            <!-- <p><i class="fa fa-phone-alt"></i>+91 7020523129</p>-->
+                            <p><i class="fa fa-envelope"></i>almadatcharity@gmail.com</p>
+                            <div class="footer-social">
+                                <a class="btn btn-custom" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-custom" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-custom" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-custom"
+                                    href="https://instagram.com/al_madat_foundation?igshid=ZDdkNTZiNTM=" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-custom" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer-link">
+                            <h2>Popular Links</h2>
+                            <a href="about.html">About Us</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="event.html">Events</a>
+    
+                        </div>
+                    </div>
+                  
+    
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; <a href="#">Al-Madat Foundation</a>, All Right Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Designed By <a
+                                href="https://www.google.com/search?rlz=1C1ONGR_enIN1039IN1039&sxsrf=AJOqlzVSCx31uGrnMyZmYzvd1H4bBCYCwg:1676926374389&q=Musa+Dilip+Patel&stick=H4sIAAAAAAAAAOOwesSozi3w8sc9YSm5SWtOXmOU4BLzSsxLLEl0LkpNLEkNTk0sSs5wTixK4VnEKuBbWpyo4JKZk1mgEACUzAEAGTAeuz8AAAA&sa=X&ved=2ahUKEwi4pPDG_aT9AhVE3jgGHYFPDbQQnJoFegQIJBAG&biw=1229&bih=571&dpr=1.56">Musa
+                                Dilip Patel </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to top button -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/parallax/parallax.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
